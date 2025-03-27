@@ -3,13 +3,10 @@
     "builds": [
       {
         "src": "index.php",
-        "use": "@vercel/php"
-      }
-    ],
-    "routes": [
-      {
-        "src": "/(.*)",
-        "dest": "/index.php"
+        "use": "@vercel/php",
+        "config": {
+          "phpVersion": "7.4"
+        }
       }
     ]
   }
