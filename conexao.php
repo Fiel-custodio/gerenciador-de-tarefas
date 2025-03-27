@@ -4,7 +4,7 @@ class BancoDeDados
     private $servername = "maglev.proxy.rlwy.net";
     private $username = "root";
     private $password = "YUwuhrEQjVCrdmkoIrpLzpoWaobKnzAW";
-    private $dbname = "${{ listas.MYSQL_URL }}";
+    private $dbname = "listas";
     private $port = "14227";
     private $conn;
 
