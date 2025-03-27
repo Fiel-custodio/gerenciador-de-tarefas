@@ -1,15 +1,16 @@
 <?php
 class BancoDeDados
 {
-    private $servername = "localhost";
+    private $servername = "maglev.proxy.rlwy.net";
     private $username = "root";
-    private $password = "";
-    private $dbname = "listas";
+    private $password = "YUwuhrEQjVCrdmkoIrpLzpoWaobKnzAW";
+    private $dbname = "${{ listas.MYSQL_URL }}";
+    private $port = "14227";
     private $conn;
 
     public function __construct()
     {
-        $this->conn = new mysqli($this->servername, $this->username, $this->password, $this->dbname);
+        $this->conn = new mysqli($this->servername, $this->username, $this->password, $this->dbname, $this->port);
         if ($this->conn->connect_error) {
             die("Falha na conexão: " . $this->conn->connect_error);
         }
