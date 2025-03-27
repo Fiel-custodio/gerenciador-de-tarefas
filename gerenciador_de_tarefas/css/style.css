@@ -1,0 +1,160 @@
+/* Reset de margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fonte e layout básico */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Título principal */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Estilo do formulário de tarefa */
+.tarefa form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group label {
+    font-size: 1rem;
+}
+
+.form-group input, .form-group select {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.submit button {
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit button:hover {
+    background-color: #45a049;
+}
+
+/* Tabela de tarefas */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f2f2f2;
+}
+
+/* Estilo para a área de busca */
+.busca {
+    margin-top: 20px;
+}
+
+.busca input, .busca select {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.busca button {
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.busca button:hover {
+    background-color: #45a049;
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    /* Ajuste no tamanho da fonte para telas menores */
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .tarefa form {
+        gap: 10px;
+    }
+
+    .form-group input, .form-group select {
+        font-size: 0.9rem;
+    }
+
+    .submit button {
+        font-size: 0.9rem;
+    }
+
+    /* Ajuste da tabela para tela menor */
+    table {
+        font-size: 0.9rem;
+    }
+
+    table th, table td {
+        padding: 8px;
+    }
+
+    /* Ajuste da busca */
+    .busca input, .busca select, .busca button {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+}
+
+/* Responsividade para dispositivos muito pequenos (como celulares em retrato) */
+@media (max-width: 480px) {
+    /* Formulário de tarefa */
+    .tarefa form {
+        gap: 8px;
+    }
+
+    .form-group input, .form-group select {
+        font-size: 0.85rem;
+    }
+
+    /* Botões menores */
+    .submit button, .busca button {
+        font-size: 0.85rem;
+    }
+
+    /* Tabela para telas menores */
+    table th, table td {
+        padding: 6px;
+    }
+
+    /* Ajuste no espaço do formulário */
+    .form-group input, .form-group select {
+        width: 100%;
+    }
+}
